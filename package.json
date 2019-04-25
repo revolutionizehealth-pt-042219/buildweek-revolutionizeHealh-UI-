@@ -1,0 +1,19 @@
+{
+  "name": "revolutionize_health",
+  "version": "1.0.0",
+  "description": "Application to track multiple medical procedures cost by institutions and doctors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/revolutionizehealth-pt-042219/buildweek-revolutionizeHealth-UI-Ernesto-Pena.git"
+  },
+  "author": "Lambda Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/revolutionizehealth-pt-042219/buildweek-revolutionizeHealth-UI-Ernesto-Pena/issues"
+  },
+  "homepage": "https://github.com/revolutionizehealth-pt-042219/buildweek-revolutionizeHealth-UI-Ernesto-Pena#readme"
+}
