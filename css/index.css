@@ -126,11 +126,129 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: Aileron-Thin;
+  src: url('../assets/fonts/Aileron-Thin.otf');
+}
 * {
   margin: 0px;
   padding: 0px;
-  background-color: #76d1d1;
+}
+html {
+  font-size: 100%;
+  color: #777;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+h1 {
+  display: flex;
+  flex-direction: column;
 }
 .top_section {
-  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(83, 94, 82, 0.5), rgba(130, 216, 186, 0.39)), url(../assets/clean_hospital.png);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 50% 95%, 0 85vh);
+}
+.top_section nav {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  margin: 5px;
+  border-bottom: 1px solid white;
+  justify-content: space-between;
+}
+.top_section nav .logo_text {
+  display: inline-block;
+  justify-content: flex-start;
+  height: auto;
+  text-align: left;
+}
+.top_section nav .logo_text .logo_main_top,
+.top_section nav .logo_text .logo_main_bottom {
+  font-family: 'Aileron-Thin';
+  width: 100%;
+  letter-spacing: 5px;
+  text-align: left;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  color: black;
+  margin-left: 15%;
+}
+.top_section nav .logo_text .logo_main_top {
+  font-size: 3rem;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+.top_section nav .logo_text .logo_main_bottom {
+  font-size: 1.5rem;
+  font-weight: 200px;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.top_section nav .my-anchor {
+  font-size: 1.2rem;
+  font-family: Aileron-Thin;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 30px;
+  margin: 30px 25px 32px 0px;
+  border: 0.5px solid black;
+  border-radius: 0px;
+  background-color: rgba(245, 239, 239, 0.137);
+}
+.top_section nav .my-anchor:hover {
+  color: black;
+  background-color: rgba(245, 239, 239, 0.137);
+}
+.top_section nav .my-anchor:last-child {
+  margin-right: 80px;
+}
+.top_section nav .my-anchor {
+  display: inline-block;
+}
+.top_section nav .my-anchor:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.288);
+}
+.top_section nav .my-anchor:active {
+  transform: translateY(-1px);
+}
+.top_section nav .my-anchor:hover:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+  margin: 15px;
+  height: 30px;
+}
+.top_section nav .my-anchor:hover::after {
+  transform: scale(1.5);
+  opacity: 0;
+}
+.top_section nav .animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
 }
