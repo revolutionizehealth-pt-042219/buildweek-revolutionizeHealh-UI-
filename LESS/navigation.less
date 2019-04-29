@@ -2,69 +2,35 @@
     display: flex;
     flex-direction: row;
     height: 100vh;
+    flex-wrap: wrap;
     background-image: linear-gradient(to right bottom, rgba(83, 94, 82, 0.5) , rgba(130, 216, 186, 0.39)) ,url(../assets/clean_hospital.png);
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 50% 95%, 0 85vh );
-    
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 50% 98%, 0 85vh );
+    z-index: 1000;
 
     nav {
+       position:fixed;
+       z-index: -1;
        display: flex;
        width: 100%;
        height: 100px;
-       margin: 5px; 
+       margin: 5px 0px 0px 0px; 
        border-bottom: 1px solid white;
        justify-content: space-between; 
+       z-index: 500;
 
-       .logo_text {
-           display: inline-block;
+       .logo {
+           margin-top: 6px;
            justify-content: flex-start; 
            height: auto;
            text-align: left; 
-
-                .logo_main_top, .logo_main_bottom {
-                    font-family: 'Aileron-Thin';
-                    width: 100%; 
-                    letter-spacing: 5px;
-                    text-align: left;
-                    animation-name: moveInLeft;
-                    animation-duration: 1s;
-                    animation-timing-function: ease-out;
-                    color: black;
-                    margin-left: 15%;
-                }
-                .logo_main_top {
-                    font-size: 3rem;
-                    font-weight: 200;     
-                    margin-bottom: 10px; 
-                }
-            
-                .logo_main_bottom {
-                    font-size: 1.5rem;
-                    font-weight: 200px;
-                }
-
-                @keyframes moveInLeft {
-                    0% {
-                       opacity: 0;
-                       transform: translateX(100px);
-                    }
-               
-                    80% {
-                        transform: translateX(-10px);
-               
-                    }
-               
-                    100% {
-                       opacity: 1;
-                       transform: translateX(0px);
-                    }
-                }
+           margin-left: 2%;
         }
     
 
         .my-anchor {
-            .a_mixin(@a-font-family: Aileron-Thin; 
+            .a_mixin(@a-font-family:  'Aileron-Thin'; 
                     @a-margin: 30px 25px 32px 0px ; 
                     @a-font-size: 1.2rem ; 
                     @a-padding: 8px 30px ;
@@ -87,6 +53,7 @@
         .my-anchor:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 15px rgba(0, 0, 0, 0.288);
+            transition: transform 0.5s;
         }
         
         .my-anchor:active {
@@ -119,6 +86,79 @@
 
     }
     
-  
- }
+   
+   //SECTION FOR THE THREE CONTAINERS
+    .top_container {
+        position: top;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+        height: 75vh;
+        margin-top: 10%;
+
+        .left_box , .center_box , .right_box{
+            border: 1px black solid;
+            width: 20%;
+            height: 55%;
+            background-color: rgba(0, 225, 255, 0.13);
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+        } 
+
+        .left_box {
+            animation-name: moveInRight;
+        }
+        .center_box {
+            animation-name: moveInBottom;
+        }
+        .right_box {
+            animation-name: moveInLeft;
+        }
+
+        @keyframes moveInLeft {
+            0% {
+               opacity: 0;
+               transform: translateX(100px);
+            }
+            80% {
+                transform: translateX(-10px);
+            }
+            100% {
+               opacity: 1;
+               transform: translateX(0px);
+            }
+        }
+
+        @keyframes moveInRight {
+            0% {
+               opacity: 0;
+               transform: translateX(-100px);
+            }
+            80% {
+                transform: translateX(10px);
+            }
+            100% {
+               opacity: 1;
+               transform: translateX(0px);
+            }
+        }   
+        
+        @keyframes moveInBottom {
+            0% {
+               opacity: 0;
+               transform: translateY(100px);
+            }
+            80% {
+                transform: translateY(-10px);
+             }
+            100% {
+               opacity: 1;
+               transform: translateY(0px);
+            }
+        }    
+        
+    }
+}
 

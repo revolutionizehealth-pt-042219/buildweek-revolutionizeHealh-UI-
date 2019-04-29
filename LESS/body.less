@@ -1,0 +1,113 @@
+//SECTION FOR THE THREE CONTAINERS
+.middle_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    background-color: rgb(182, 200, 216);
+
+    background-image: linear-gradient(to bottom, rgba(66, 181, 216, 0.678), rgba(135, 135, 223, 0.74)), url('../assets/mainimage.jpg');
+    background-size: cover;
+    background-position: top;
+
+    .left_box , .center_box , .right_box , .right_right_box {
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border: 1px rgb(209, 192, 192) solid;
+        width: 17%;
+        height: 500px;
+        background-color: rgba(220, 230, 247, 0.671);
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        box-shadow: 0 1.5rem 4rem rgba(black, .35);
+        border-radius: 5px;
+        text-align: center;
+        padding: 1.5rem 0.9rem 1.5rem 0.9rem;
+        transition: 0.35s;
+
+        .font_icon {
+            font-size: 3rem;
+            color: #3A405A;
+        }
+
+        .paragraph {
+            .p_mixin()
+        }
+
+        .body_button {
+            align-items: flex-end;
+            margin-top: auto;
+        }
+
+      }
+
+    .left_box {
+        animation-name: moveInRight;
+    }
+    .center_box {
+        animation-name: moveInRight;
+    }
+    .right_box {
+        animation-name: moveInLeft;
+    }
+
+    .right_right_box {
+        animation-name: moveInLeft;
+    }
+
+    @keyframes moveInLeft {
+        0% {
+           opacity: 0;
+           transform: translateX(100px);
+        }
+        80% {
+            transform: translateX(-10px);
+        }
+        100% {
+           opacity: 1;
+           transform: translateX(0px);
+        }
+    }
+
+    @keyframes moveInRight {
+        0% {
+           opacity: 0;
+           transform: translateX(-100px);
+        }
+        80% {
+            transform: translateX(10px);
+        }
+        100% {
+           opacity: 1;
+           transform: translateX(0px);
+        }
+    }   
+    
+    @keyframes moveInBottom {
+        0% {
+           opacity: 0;
+           transform: translateY(100px);
+        }
+        80% {
+            transform: translateY(-10px);
+         }
+        100% {
+           opacity: 1;
+           transform: translateY(0px);
+        }
+    }
+
+    .left_box:hover , .center_box:hover , .right_box:hover , .right_right_box:hover {
+        transform: translateY(-1.2rem;) scale(1.02); 
+    }   
+    .left_box:hover:after , .center_box:hover:after , .right_box:hover:after , .right_right_box:hover:after {
+        margin: 1.8rem; 
+    } 
+
+    
+}

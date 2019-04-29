@@ -3,35 +3,101 @@
 <head>
     <title>Revolutionize Health</title>
     <link rel="stor cut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/icons.css">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
-    <script src="components/index.js" async></script>
+    <!-- <script src="components/index.js" async></script> -->
+    <script src="components/menu.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet"> -->
 </head>
     <body>
         <header class="top_section">
             <nav>
 
-                <div class="logo_text">
-                        <h1 class="logo_main">
-                            <span class="logo_main_top">Revolutionize </span>
-                            <span class="logo_main_bottom">Health</span>
-                        </h1>
+                <div class="logo">
+                        <!-- <h1 class="logo_main"> -->
+                            <img src="./assets/logo1.png" alt="Revolutionize Health" class="logo">
+                            <!-- <span class="logo_main_top">Revolutionize </span>
+                            <span class="logo_main_bottom">Health</span> -->
+                        <!-- </h1> -->
                 </div>
                 <div class='menu'>
-                    <a class='my-anchor .animated' href="">Home</a>
-                    <a class='my-anchor .animated' href="">Search</a>
-                    <a class='my-anchor .animated' href="">About</a>
-                    <a class='my-anchor .animated' href="">Login</a>
-                    <!-- <img src="" alt="Logo" class="logo"> -->
+                    <a data-home="Home" class='my-anchor .animated' href="./index.html">Home</a>
+                    <a data-Search="Search" class='my-anchor .animated search_anchor' href="./search.html">Search</a>
+                    <a data-About="About" class='my-anchor .animated about_anchor' href="./about.html">About</a>
+                    <a data-Login="Login" class='my-anchor .animated' href="">Login</a>
                 </div>
             </nav>
-            <div class="line_div"></div>
-            <!-- <a href="#" class="btn btn-white btn-animated">Discover Our Tours</a> -->
+
+            <section class="top_container">
+            
+                <div class="left_box">
+                    <h1 class="logo_main">
+                        <img src="./assets/logo1.png" alt="Revolutionize Health" class="logo_box">
+                        <h2>Price Transparency</h2>
+                        <p>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                        <span class="logo_main_top">Revolutionize </span>
+                        <span class="logo_main_bottom">Health</span> -->
+                    </h1>
+                </div>
+                <div class="center_box">
+
+                </div>
+                <div class="right_box">
+
+                </div>
+            </section>
+
+           <a href="#" class="btn btn-white btn-animated">Discover Our Tours</a>
             
         </header>
+        <section class="middle_container">
+                
+            <!-- <div><h1>Our Features</h1></div> -->
+                <div class="left_box">
+                    <i class="icon-basic-calculator font_icon"></i>
+                    <h2>Price Transparency</h2>
+                    <p class="paragraph">Determining the cost of your healthcare service can be difficult. 
+                                         Many factors affect the cost of services and most people are not 
+                                         sure what to ask or who to ask. Your financial obligations can include
+                                         a copay, deductible, a coinsurance and this varies depending on your
+                                         health care plan. Healthcare services not covered by insurance can be
+                                         another type of cost for patients. Our platform allows you to get real
+                                         information from people with your same problems.</p>
+                    <button class="body_button">Read More</button>                     
+                </div>
+                <div class="center_box">
+                    <i class="icon-basic-book-pencil font_icon"></i>
+                    <h2>Accountability</h2>
+                    <p class="paragraph">Accountability has become a major issue in health care. Accountability
+                                         entails the procedures and processes by which one party justifies and 
+                                         takes responsibility for its activities. Sharing your medical procedures
+                                         experiences, costs and other detail is one mayor step toward making accountable
+                                         doctors, medical institutions, and insurance companies. It also help other users
+                                         to make an accurate prediction on their treatment or medical procedure. </p>
+                    <button class="body_button">Read More</button> 
+                    
+                </div>
+                <div class="right_box">
+                    <i class="icon-basic-geolocalize-05 font_icon"></i>
+                    <h2>Discover Places</h2>
+                    <p class="paragraph">Our mapping tool makes a lot easier your search, displaying relevant information 
+                                         for medical institutions and doctors in your local community.  </p>
+                    <button class="body_button">Read More</button> 
+                </div>
+                <div class="right_right_box">
+                    <i class="icon-basic-message-multiple font_icon"></i>
+                    <h2>Share your Experience</h2>
+                    <p class="paragraph">This is a text</p>
+                    <button class="body_button">Read More</button> 
+                </div>
+
+            </section>
     </body>
     <footer>
-
+        <h3 class="footer_text">Revolutionize Health &reg 2019</h3>
+        <h3 class="footer_text">Lambda School Webpt5</h3>
+        <h3 class="footer_text">Project time frame => 04/22/2019  -  05/02/2019</h3>
     </footer>
 </html>

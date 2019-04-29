@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Revolutionize Health</title>
+    <link rel="stor cut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/icons.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+   <script src="components/map.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+    <body>
+        <header class="other_top_section">
+            <nav>
+                <div class="logo">
+                    <img src="./assets/logo1.png" alt="Revolutionize Health" class="logo">
+                </div>
+                <div class='menu'>
+                    <a data-home="Home" class='my-anchor .animated' href="./index.html">Home</a>
+                    <a data-Search="Search" class='my-anchor .animated search_anchor' href="./search.html">Search</a>
+                    <a data-About="About" class='my-anchor .animated about_anchor' href="./about.html">About</a>
+                    <a data-Login="Login" class='my-anchor .animated' href="">Login</a>
+                </div>
+            </nav>
+        </header>
+        
+        <section class="map_section">
+            <div class="wrapper">   
+                     
+            <div class="left">            
+                <div id="mapid">
+                </div>
+                <h4>This map was possible using <a href="https://leafletjs.com/">Leaflet.</a> An amazing open-source JavaScript library.</h2>
+            </div>
+            
+            <div class="right"> 
+                <div class="wrapper_search"> 
+                    <div>
+                        <h5>Search Options</h5>          
+                        <form class="form_class paragraph" action="./search.html" method="GET">
+                        <div><label class="label_class" for="address">Address</label></div>    
+                        <div><input class="input_class" type="text" id="address" name="address"></div>
+                        <div class="div_class"></div>
+                        <div><label class="label_class" for="city">City</label></div>    
+                        <div><input class="input_class" type="text" id="city" name="city"></div>
+                        <div class="div_class"></div>
+                        <div><label class="label_class" for="zip">Zip Code</label></div>    
+                        <div><input class="input_class" type="text" id="zip_code" name="zip_code"></div>
+                        <input class="my_search_btn" type="submit" value="Search">
+                        </form>
+                   </div>
+                   <div>
+                        <h5>Results</h5>          
+                        <div class="search_result">
+                            <h6 data-address="name">name</h6>
+                            <h6 data-address="address">address</h6>
+                            <h6 data-address="city">city</h6>
+                            <h6 data-address="zip">zip</h6>
+                        </div>
+                        
+                        </form>
+                   </div>
+                </div>
+                </div>
+            </div>
+            
+        </section>
+    </body>
+    <footer>
+        <h3 class="footer_text">Revolutionize Health &reg 2019</h3>
+        <h3 class="footer_text">Lambda School Webpt5</h3>
+        <h3 class="footer_text">Project time frame => 04/22/2019  -  05/02/2019</h3>
+    </footer>
+</html>
