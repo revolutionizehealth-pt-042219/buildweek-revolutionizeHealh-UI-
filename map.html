@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Revolutionize Health</title>
+    <link rel="stor cut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/icons.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+    <body>
+        <header class="other_top_section">
+            <nav>
+                <div class="logo">
+                    <img src="./assets/logo1.png" alt="Revolutionize Health" class="logo">
+                </div>
+                <div class='menu'>
+                    <a data-home="Home" class='my-anchor .animated' href="./index.html">Home</a>
+                    <a data-Search="Search" class='my-anchor .animated search_anchor' href="./search.html">Search</a>
+                    <a data-About="About" class='my-anchor .animated about_anchor' href="./about.html">About</a>
+                    <a data-Login="Login" class='my-anchor .animated' href="">Login</a>
+                </div>
+            </nav>
+        </header>
+        
+        <section class="map_section">
+            <div class="wrapper">   
+                     
+            <div class="left">            
+                <div id="mapid">
+                </div>
+            </div>
+            
+            <div class="right"> 
+                <div class="wrapper_search"> 
+                    <div class="search_options"> 
+                        <h5>Search Options</h5>          
+                        <form class="form_class paragraph" action="./search.html" method="GET">
+                        <div><label class="label_class" for="address">Address</label></div>    
+                        <div><input class="input_class" type="text" id="address" name="address"></div>
+                        <div class="div_class"></div>
+                        <div><label class="label_class" for="city">City</label></div>    
+                        <div><input class="input_class" type="text" id="city" name="city"></div>
+                        <div class="div_class"></div>
+                        <div><label class="label_class" for="zip">Zip Code</label></div>    
+                        <div><input class="input_class" type="text" id="zip_code" name="zip_code"></div>
+                        <input class="my_search_btn" type="submit" value="Search">
+                        </form>
+                   </div>
+                   <div class="search_results">          
+                        <div class="search_result_div">
+                            <h6 data-address="name">name</h6>
+                            <h6 data-address="address">address</h6>
+                            <h6 data-address="city">city</h6>
+                            <h6 data-address="zip">zip</h6>
+                        </div>
+                        
+                        </form>
+                   </div>
+                </div>
+                </div>
+            </div>
+            
+        </section>
+    </body>
+    <footer>
+        <h3 class="footer_text">Revolutionize Health &reg 2019</h3>
+        <h3 class="footer_text">Lambda School Webpt5</h3>
+        <h3 class="footer_text">Project time frame => 04/22/2019  -  05/02/2019</h3>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeop613wuZcWB3hQ1XWypqqc97m__vIaw&libraries=places"></script>
+        <script src="components/map_google.js"></script>
+    </footer>
+</html>

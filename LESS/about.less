@@ -1,0 +1,132 @@
+.other_top_section {
+    display: flex;
+    flex-direction: row;
+
+    nav {
+       position:sticky;
+       display: flex;
+       width: 100%;
+       margin: 0px; 
+       justify-content: space-between; 
+       z-index: 500;
+       background-color: rgb(182, 200, 216);
+
+       .logo {
+           margin-top: 6px;
+           justify-content: flex-start; 
+           height: auto;
+           text-align: left; 
+           margin-left: 2%;
+        }
+    
+
+        .my-anchor {
+            .a_mixin(@a-font-family:  'Aileron-Thin'; 
+                    @a-margin: 30px 25px 32px 0px ; 
+                    @a-font-size: 1.2rem ; 
+                    @a-padding: 8px 30px ;
+                    @a-font-color: black; 
+                    @a-border-radius: 0px ; 
+                    @a-bg-color: rgba(245, 239, 239, 0.137);
+                    @a-hover-bg-color: rgba(245, 239, 239, 0.137);
+                    @a-hover-color: black;
+                    @a-border: 0.5px solid black);
+        }
+
+        .my-anchor:last-child {
+            margin-right: 80px; 
+        }
+
+        .my-anchor {
+            display: inline-block;
+        }
+        
+        .my-anchor:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.288);
+            transition: transform 0.5s;
+        }
+        
+        .my-anchor:active {
+            transform: translateY(-1px);
+        }
+        
+        .my-anchor:hover:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            border-radius: 100px;
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: -1;
+            transition: all .4s;
+            margin: 15px;
+            height: 30px;
+        }
+        
+         .my-anchor:hover::after {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+
+        .animated {
+            animation: moveInBottom .5s ease-out .75s;
+            animation-fill-mode: backwards;
+        }
+    }
+} 
+   .about {
+       display:flex;
+       flex-direction: column;
+       align-items: center;
+       background-color: rgb(232, 237, 241);
+       width: 100%;
+       height: 81vh;
+
+     .about_class {
+        width: 80%;
+
+        .about_paragraph {
+            .p_mixin();
+            font-size: 1.4rem;
+            
+        }
+        .wrapper {
+            display:flex;
+            flex-direction:row;
+            justify-content: space-evenly;
+
+            .left_box , .right_box {
+                display:flex;
+                flex-direction:column;
+                align-items: center;
+                margin-top: 1%;
+                margin-bottom: 5%;
+                border: 1px rgb(209, 192, 192) solid;
+                width: 35%;
+                height: auto;
+                background-color: rgba(220, 230, 247, 0.671);
+                box-shadow: 0 1.5rem 4rem rgba(black, .35);
+                border-radius: 5px;
+                padding: 1.0rem 0.9rem 1.0rem 0.9rem;
+                transition: 0.35s;
+    
+                .paragraph {
+                    .p_mixin()
+                }
+
+                .tech_logos {
+                    padding: 1rem;
+                    width:100px;
+                    height: 100px;
+                }
+            }
+        }
+
+     }
+
+   }
+
+
+

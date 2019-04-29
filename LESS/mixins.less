@@ -1,0 +1,89 @@
+// Mixins in here
+
+.a_mixin (@a-font-size: 1.0rem;
+          @a-font-family: 'Courier New', Courier, monospace;
+          @a-font-color: black; 
+          @a-text-transf: uppercase;
+          @a-text-dec:none;
+          @a-padding: 5px 12px; 
+          @a-margin: 0px; 
+          @a-border: 1px solid white; 
+          @a-border-radius: 0px; 
+          @a-bg-color:white; 
+          @a-hover-color: white; 
+          @a-hover-bg-color:black) {
+
+            font-size: @a-font-size;   
+            font-family: @a-font-family;
+            color: @a-font-color;
+            text-transform: @a-text-transf;
+            text-decoration: @a-text-dec;
+            padding: @a-padding;
+            margin: @a-margin;
+            border: @a-border;
+            border-radius: @a-border-radius;
+            background-color: @a-bg-color;
+
+            &:hover {
+                color: @a-hover-color;
+                background-color: @a-hover-bg-color;
+            }
+}
+
+
+.btn_mixin (@btn-font-size: 1.0rem;
+            @btn-font-family: 'Courier New', Courier, monospace;
+            @btn-font-color: black; 
+            @btn-text-transf: uppercase;
+            @btn-text-dec:none;
+            @btn-padding: 5px 12px; 
+            @btn-margin: 0px; 
+            @btn-border: 1px solid white; 
+            @btn-border-radius: 0px;
+            @btn-width: 100%;
+            @btn-height: 100%; 
+            @btn-bg-color:white) {
+
+              font-size: @btn-font-size;   
+              font-family: @btn-font-family;
+              color: @btn-font-color;
+              text-transform:@btn-text-transf;
+              text-decoration: @btn-text-dec;
+              padding: @btn-padding;
+              margin: @btn-margin;
+              border: @btn-border;
+              border-radius: @btn-border-radius;
+              width: @btn-width;
+              height: @btn-height; 
+              background-color: @btn-bg-color;
+            }
+
+.p_mixin (@p-font-size: 1.1rem;
+          @p-font-family: 'Aileron-Thin';
+          @p-font-color: rgb(15, 16, 17); 
+          @p-font-weight: 300;
+          @p-padding: 0.5rem; 
+          @p-margin: 0px; 
+          @p-border: 0px solid rgba(255, 255, 255, 0); 
+          @p-border-radius: 0px;
+          @p-width: auto;
+          @p-height: auto; 
+          @p-line-height: 1.8rem;
+          @p-text-align : justify;
+
+          @p-bg-color:rgba(255, 255, 255, 0)) {
+
+          font-size: @p-font-size;   
+          font-family: @p-font-family;
+          color: @p-font-color;
+          padding: @p-padding;
+          margin: @p-margin;
+          border: @p-border;
+          border-radius: @p-border-radius;
+          width: @p-width;
+          height: @p-height; 
+          background-color: @p-bg-color;
+          font-weight:  @p-font-weight;
+          line-height: @p-line-height;
+          text-align: @p-text-align; 
+        }
