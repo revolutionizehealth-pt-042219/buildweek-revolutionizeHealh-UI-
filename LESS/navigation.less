@@ -9,6 +9,8 @@
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 50% 98%, 0 85vh );
     z-index: 1000;
 
+    //Mediaquery
+
     nav {
        position:fixed;
        z-index: -1;
@@ -20,7 +22,7 @@
        justify-content: space-between; 
        z-index: 500;
 
-       .logo {
+        .logo {
            margin-top: 6px;
            justify-content: flex-start; 
            height: auto;
@@ -82,6 +84,15 @@
         .animated {
             animation: moveInBottom .5s ease-out .75s;
             animation-fill-mode: backwards;
+        }
+
+        //Media query for 500px Mobile. Navigation Bar
+        @media (max-width: 500px) {        
+            display: none;
+        }
+        //Media query for 800px Mobile. Tablet Bar
+        @media (max-width: 800px) {        
+            //display: none;
         }
 
     }
@@ -160,5 +171,11 @@
         }    
         
     }
+    @media (max-width:800px) {
+        flex-direction: column;
+    }
+    
 }
+
+
 
