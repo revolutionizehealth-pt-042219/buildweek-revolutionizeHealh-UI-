@@ -1,0 +1,101 @@
+.navigation {
+    position: fixed;
+    border-bottom: 1px solid white;
+    width: 100%;
+    height: 8vh;
+    z-index: 3000;
+
+    
+    // .logo {
+    //     position: fixed;
+    //     height: auto;
+    //     width: auto;
+    //     text-align: left; 
+    //     margin-left: 2%;
+    // }
+   
+      
+        .menu-button {
+            position: fixed;
+            max-width:100%;
+            height:auto;
+            top: 1rem;
+            right: 6rem;
+            z-index: 2000;
+            cursor: pointer;
+        }
+        
+        .navigation_nav {
+            display: none;
+            position:fixed;
+            top:3rem;
+            right: 10rem;
+            width: 10%;
+            height: 400px;  
+            z-index: 8000;
+            border: 1px solid white;
+
+            // .logo {
+            // margin-top: 6px;
+            // justify-content: flex-start; 
+            // height: auto;
+            // text-align: left; 
+            // margin-left: 2%;
+            // }
+        
+
+            .my-anchor {
+                .a_mixin(@a-font-family:  'Aileron-Thin'; 
+                        @a-margin: 3px 0px 0px 0px ; 
+                        @a-font-size: 1.2rem ; 
+                        @a-padding: 8px 30px ;
+                        @a-font-color: black; 
+                        @a-border-radius: 0px ; 
+                        @a-bg-color: rgba(245, 239, 239, 0.137);
+                        @a-hover-bg-color: rgba(245, 239, 239, 0.137);
+                        @a-hover-color: black;
+                        @a-border: 0.5px solid black);
+            }
+
+            .my-anchor {
+                display: inline-block;
+                text-align: center;
+                width: auto;
+            }
+            
+            .my-anchor:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.288);
+                transition: transform 0.5s;
+            }
+            
+            .my-anchor:active {
+                transform: translateY(-1px);
+            }
+            
+            .my-anchor:hover:after {
+                content: "";
+                display: inline-block;
+                width: 100%;
+                border-radius: 100px;
+                position: absolute;
+                top:0;
+                left:0;
+                z-index: -1;
+                transition: all .4s;
+                //margin: 15px;
+                height: 30px;
+            }
+            
+            .my-anchor:hover::after {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+
+            .animated {
+                animation: moveInBottom .5s ease-out .75s;
+                animation-fill-mode: backwards;
+            }
+        }
+
+    }

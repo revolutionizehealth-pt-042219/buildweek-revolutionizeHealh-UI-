@@ -1,11 +1,15 @@
-let menu_click = document.querySelectorAll('my-anchor');
-console.log(menu_click);
 
+const menu_click = document.querySelector('.nav_button');
+const nav_element = document.querySelector('.navigation_nav');
 
-//  menu_click.addEventListener('onclick', function(event){
-//     console.log(event);
-//     }) 
+menu_click.addEventListener('click', function(e){
+     //menu_click.classList.toggle('navigation_nav_show');
+     //nav_element.style.display = 'initial';
+     if (nav_element.style.display === "none") {
+        nav_element.style.display = "initial";
+      } else {
+        nav_element.style.display = "none";
+      }
 
-// function gotodiv(element) {
+}) 
 
-// }

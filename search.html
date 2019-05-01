@@ -22,7 +22,7 @@
 </head>
     <body>
         <header class="other_top_section">
-            <nav>
+            <nav class="my_nav">
                 <div class="logo">
                     <img src="./assets/logo1.png" alt="Revolutionize Health" class="logo">
                 </div>
@@ -36,42 +36,41 @@
         </header>
         
         <section class="map_section">
-            <div class="wrapper">   
-                     
-            <div class="left">            
-                <div id="mapid">
+            <div class="wrapper">     
+                <div class="left">            
+                    <div id="mapid">
+                    </div>
+                    <h4>This map was possible using <a href="https://leafletjs.com/">Leaflet.</a> An amazing open-source JavaScript library.</h2>
                 </div>
-                <h4>This map was possible using <a href="https://leafletjs.com/">Leaflet.</a> An amazing open-source JavaScript library.</h2>
-            </div>
-            
-            <div class="right"> 
-                <div class="wrapper_search"> 
+                
+                <div class="right"> 
+                    <!-- <div class="wrapper_search">  -->
+                        <div>
+                            <h5>Search Options</h5>          
+                            <form class="form_class paragraph" action="./search.html" method="GET">
+                            <div><label class="label_class" for="address">Address</label></div>    
+                            <div><input class="input_class" type="text" id="address" name="address"></div>
+                            <div class="div_class"></div>
+                            <div><label class="label_class" for="city">City</label></div>    
+                            <div><input class="input_class" type="text" id="city" name="city"></div>
+                            <div class="div_class"></div>
+                            <div><label class="label_class" for="zip">Zip Code</label></div>    
+                            <div><input class="input_class" type="text" id="zip_code" name="zip_code"></div>
+                            <input class="my_search_btn" type="submit" value="Search">
+                            </form>
+                    </div>
                     <div>
-                        <h5>Search Options</h5>          
-                        <form class="form_class paragraph" action="./search.html" method="GET">
-                        <div><label class="label_class" for="address">Address</label></div>    
-                        <div><input class="input_class" type="text" id="address" name="address"></div>
-                        <div class="div_class"></div>
-                        <div><label class="label_class" for="city">City</label></div>    
-                        <div><input class="input_class" type="text" id="city" name="city"></div>
-                        <div class="div_class"></div>
-                        <div><label class="label_class" for="zip">Zip Code</label></div>    
-                        <div><input class="input_class" type="text" id="zip_code" name="zip_code"></div>
-                        <input class="my_search_btn" type="submit" value="Search">
-                        </form>
-                   </div>
-                   <div>
-                        <h5>Results</h5>          
-                        <div class="search_result">
-                            <h6 data-address="name">name</h6>
-                            <h6 data-address="address">address</h6>
-                            <h6 data-address="city">city</h6>
-                            <h6 data-address="zip">zip</h6>
-                        </div>
-                        
-                        </form>
-                   </div>
-                </div>
+                            <h5>Results</h5>          
+                            <div class="search_result">
+                                <h6 data-address="name">name</h6>
+                                <h6 data-address="address">address</h6>
+                                <h6 data-address="city">city</h6>
+                                <h6 data-address="zip">zip</h6>
+                            </div>
+                            
+                            </form>
+                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
             
