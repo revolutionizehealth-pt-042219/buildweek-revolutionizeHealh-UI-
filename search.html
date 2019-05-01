@@ -14,63 +14,76 @@
    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
    integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
    crossorigin=""></script>
-   <script src="components/map.js"></script>
-
-
+   <script src="components/map_google.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
     <body>
-        <header class="other_top_section">
-            <nav class="my_nav">
-                <div class="logo">
-                    <img src="./assets/logo1.png" alt="Revolutionize Health" class="logo">
-                </div>
+        <section class="navigation_others">
+            <div class="logo">
+                <img src="./assets/logo1.png" alt="Revolutionize Health" class="logo">
+            </div>
+            <div class="nav_button">
+                    <img class="menu-button" src="./assets/menu.png"/>
+            </div>
+    
+            <nav class="navigation_nav">
                 <div class='menu'>
-                    <a data-home="Home" class='my-anchor .animated' href="./index.html">Home</a>
-                    <a data-Search="Search" class='my-anchor .animated search_anchor' href="./search.html">Search</a>
-                    <a data-About="About" class='my-anchor .animated about_anchor' href="./about.html">About</a>
-                    <a data-Login="Login" class='my-anchor .animated' href="">Login</a>
+                    <a data-Home="Home" class='my-anchor .animated' href="./index.html">Home</a>
+                    <a data-Search="Search" class='my-anchor .animated' href="./search.html">Search</a>
+                    <a data-About="About" class='my-anchor .animated' href="./about.html">About</a>
+                    <!-- <div class="hor_div"></div> -->
+                    <a data-Login="Login" class='my-anchor .animated' href="">Login/Signup</a>
                 </div>
             </nav>
-        </header>
+        </section>
         
         <section class="map_section">
-            <div class="wrapper">     
-                <div class="left">            
-                    <div id="mapid">
-                    </div>
-                    <h4>This map was possible using <a href="https://leafletjs.com/">Leaflet.</a> An amazing open-source JavaScript library.</h2>
+            <div class="wrapper">   
+                     
+            <div class="left">            
+                <div id="mapid">
                 </div>
-                
-                <div class="right"> 
-                    <!-- <div class="wrapper_search">  -->
-                        <div>
-                            <h5>Search Options</h5>          
-                            <form class="form_class paragraph" action="./search.html" method="GET">
+            </div>
+            <div class="right"> 
+                    <h6>Set your search options</h6>
+                    <div class="chk_box_div">
+                        
+                            <input class="check_box paragraph" type="checkbox" checked="checked">
+                            <label>Hospitals</label>
+                            
+                            <input class="check_box paragraph" type="checkbox">
+                            <label>Clinics</label>
+                            
+                            <input class="check_box paragraph" type="checkbox">
+                            <label>Laboratories</label>
+                    </div>
+                    <div class="div_class"></div>
+                    <div class="search_options">          
+                        <form class="form_class paragraph" action="./search.html" method="GET">
                             <div><label class="label_class" for="address">Address</label></div>    
-                            <div><input class="input_class" type="text" id="address" name="address"></div>
+                            <div><input class="address_class" type="text" id="address" name="address"></div>
                             <div class="div_class"></div>
                             <div><label class="label_class" for="city">City</label></div>    
-                            <div><input class="input_class" type="text" id="city" name="city"></div>
+                            <div><input class="city_class" type="text" id="city" name="city"></div>
                             <div class="div_class"></div>
                             <div><label class="label_class" for="zip">Zip Code</label></div>    
-                            <div><input class="input_class" type="text" id="zip_code" name="zip_code"></div>
+                            <div><input class="zip_class" type="text" id="zip_code" name="zip_code"></div>
                             <input class="my_search_btn" type="submit" value="Search">
-                            </form>
-                    </div>
-                    <div>
-                            <h5>Results</h5>          
-                            <div class="search_result">
-                                <h6 data-address="name">name</h6>
-                                <h6 data-address="address">address</h6>
-                                <h6 data-address="city">city</h6>
-                                <h6 data-address="zip">zip</h6>
-                            </div>
-                            
-                            </form>
-                    </div>
-                    <!-- </div> -->
+                        </form>
+                   </div>
+                   <div class="div_class"></div>
+                   <h6>Your Search Results</h6>
+                   <div class="search_results"> 
+                                 
+                        <div class="search_result_div">
+                            <h6 data-address="name">name</h6>
+                            <h6 data-address="address">address</h6>
+                            <h6 data-address="city">city</h6>
+                            <h6 data-address="zip">zip</h6>
+                        </div>          
+                        </form>
+                   </div>
                 </div>
             </div>
             
@@ -80,5 +93,8 @@
         <h3 class="footer_text">Revolutionize Health &reg 2019</h3>
         <h3 class="footer_text">Lambda School Webpt5</h3>
         <h3 class="footer_text">Project time frame => 04/22/2019  -  05/02/2019</h3>
+        <script src="components/menu.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeop613wuZcWB3hQ1XWypqqc97m__vIaw&libraries=places"></script>
+        <script src="components/map_google.js"></script>
     </footer>
 </html>
