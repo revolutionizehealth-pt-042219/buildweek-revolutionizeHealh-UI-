@@ -1,0 +1,75 @@
+//SECTION FOR THE THREE CONTAINERS
+    .top_container {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 500px;
+        background-image: linear-gradient(to right bottom, rgba(17, 17, 17, 0.5) , rgba(73, 75, 75, 0.699)) ,url(../assets/clean_hospital.png);
+        background-size: cover;
+        background-position: top;
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 50% 98%, 0 85vh );
+        z-index: -1;
+       
+        overflow: hidden;
+
+        // .center_box {
+        //     margin-top: 2%;
+        //     border: 1px black solid;
+        //     width: 70%;
+        //     height: 84%;
+        //     background-color: rgba(0, 225, 255, 0.13);
+        //     animation-duration: 1s;
+        //     animation-timing-function: ease-out;
+        //     animation-name: moveInBottom;
+        // } 
+
+        @keyframes moveInLeft {
+            0% {
+               opacity: 0;
+               transform: translateX(100px);
+            }
+            80% {
+                transform: translateX(-10px);
+            }
+            100% {
+               opacity: 1;
+               transform: translateX(0px);
+            }
+        }
+
+        @keyframes moveInRight {
+            0% {
+               opacity: 0;
+               transform: translateX(-100px);
+            }
+            80% {
+                transform: translateX(10px);
+            }
+            100% {
+               opacity: 1;
+               transform: translateX(0px);
+            }
+        }   
+        
+        @keyframes moveInBottom {
+            0% {
+               opacity: 0;
+               transform: translateY(100px);
+            }
+            80% {
+                transform: translateY(-10px);
+             }
+            100% {
+               opacity: 1;
+               transform: translateY(0px);
+            }
+        }    
+        
+    }
+  
+
+
+

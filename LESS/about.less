@@ -1,93 +1,14 @@
-.other_top_section {
-    display: flex;
-    flex-direction: row;
-    height: 10vh;
-
-    .my_nav {
-       position:sticky;
-       display: flex;
-       width: 100%;
-       margin: 0px; 
-       justify-content: space-between; 
-       z-index: 500;
-       background-color: rgb(182, 200, 216);
-
-       .logo {
-           margin-top: 6px;
-           justify-content: flex-start; 
-           height: auto;
-           text-align: left; 
-           margin-left: 2%;
-        }
-    
-
-        .my-anchor {
-            .a_mixin(@a-font-family:  'Aileron-Thin'; 
-                    @a-margin: 30px 25px 32px 0px ; 
-                    @a-font-size: 1.2rem ; 
-                    @a-padding: 8px 30px ;
-                    @a-font-color: black; 
-                    @a-border-radius: 0px ; 
-                    @a-bg-color: rgba(245, 239, 239, 0.137);
-                    @a-hover-bg-color: rgba(245, 239, 239, 0.137);
-                    @a-hover-color: black;
-                    @a-border: 0.5px solid black);
-        }
-
-        .my-anchor:last-child {
-            margin-right: 80px; 
-        }
-
-        .my-anchor {
-            display: inline-block;
-        }
-        
-        .my-anchor:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.288);
-            transition: transform 0.5s;
-        }
-        
-        .my-anchor:active {
-            transform: translateY(-1px);
-        }
-        
-        .my-anchor:hover:after {
-            content: "";
-            display: inline-block;
-            width: 100%;
-            border-radius: 100px;
-            position: absolute;
-            top:0;
-            left:0;
-            z-index: -1;
-            transition: all .4s;
-            margin: 15px;
-            height: 30px;
-        }
-        
-         .my-anchor:hover::after {
-            transform: scale(1.5);
-            opacity: 0;
-        }
-
-        .animated {
-            animation: moveInBottom .5s ease-out .75s;
-            animation-fill-mode: backwards;
-        }
-    }
-} 
    .about {
        display:flex;
        flex-direction: column;
        align-items: center;
        background-color: rgb(232, 237, 241);
        width: 100%;
-       height: 82vh;
+       height: auto;
 
      .about_class {
         width: 80%;
-
+        flex:1;
         .about_paragraph {
             .p_mixin();
             font-size: 1.4rem;

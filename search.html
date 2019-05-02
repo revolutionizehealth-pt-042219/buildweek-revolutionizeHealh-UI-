@@ -5,28 +5,17 @@
     <link rel="stor cut icon" href="./favicon.ico">
     <link rel="stylesheet" href="./css/icons.css">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
-
-    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
-   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-   crossorigin=""/>
-   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
-   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
-   crossorigin=""></script>
-   <script src="components/map_google.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
-    <body>
-        <section class="navigation_others">
+
+    <header class="navigation_others">
             <div class="logo">
                 <img src="./assets/logo1.png" alt="Revolutionize Health" class="logo">
             </div>
             <div class="nav_button">
                     <img class="menu-button" src="./assets/menu.png"/>
             </div>
-    
+
             <nav class="navigation_nav">
                 <div class='menu'>
                     <a data-Home="Home" class='my-anchor .animated' href="./index.html">Home</a>
@@ -36,11 +25,9 @@
                     <a data-Login="Login" class='my-anchor .animated' href="">Login/Signup</a>
                 </div>
             </nav>
-        </section>
-        
-        <section class="map_section">
-            <div class="wrapper">   
-                     
+    </header>
+    <body>
+        <div class="wrapper">       
             <div class="left">            
                 <div id="mapid">
                 </div>
@@ -49,19 +36,19 @@
                     <h6>Set your search options</h6>
                     <div class="chk_box_div">
                         
-                            <input class="check_box paragraph" type="checkbox" checked="checked">
+                            <input class="check_box" type="checkbox" checked="checked">
                             <label>Hospitals</label>
                             
-                            <input class="check_box paragraph" type="checkbox">
+                            <input class="check_box" type="checkbox">
                             <label>Clinics</label>
                             
-                            <input class="check_box paragraph" type="checkbox">
+                            <input class="check_box" type="checkbox">
                             <label>Laboratories</label>
                     </div>
                     <div class="div_class"></div>
                     <div class="search_options">          
-                        <form class="form_class paragraph" action="./search.html" method="GET">
-                            <div><label class="label_class" for="address">Address</label></div>    
+                        <form class="form_class" action="./search.html" method="GET">
+                            <div class="form_elements_div"><label class="label_class" for="address">Address</label></div>    
                             <div><input class="address_class" type="text" id="address" name="address"></div>
                             <div class="div_class"></div>
                             <div><label class="label_class" for="city">City</label></div>    
@@ -84,17 +71,34 @@
                         </div>          
                         </form>
                    </div>
-                </div>
             </div>
-            
-        </section>
+        
+        </div>
+        <footer>
+                <div class="wrap_footer"> 
+                    <div class="left_footer">
+                        <h6 class="footer_text">Revolutionize Health &reg 2019</h6>
+                        <h6 class="footer_text">Lambda School Webpt5</h6>
+                        <h6 class="footer_text">Project time frame => 04/22/2019  -  05/02/2019</h6>
+                        <h6 class="footer_text">UI Design by => Ernesto Pena</h6>
+                    </div>
+                    <div class="center_footer">
+                        <img class="footer_img" src="./assets/logos/as-seen-on1.png" alt="As seen on Media">
+                    </div>
+                    <div class="right_footer">
+                      <ul>
+                        <a class='my-anchor-foot' href="./index.html">Home</a>
+                        <a class='my-anchor-foot' href="./search.html">Search</a>
+                        <a class='my-anchor-foot' href="./about.html">About</a>
+                        <a class='my-anchor-foot' href="">Login/Signup</a>    
+                      </ul>
+                    </div> 
+                </div>
+                    <script src="components/menu.js"></script>
+                    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeop613wuZcWB3hQ1XWypqqc97m__vIaw&libraries=places"></script>
+                    <script src="components/map_google.js"></script>
+        </footer>     
     </body>
-    <footer>
-        <h3 class="footer_text">Revolutionize Health &reg 2019</h3>
-        <h3 class="footer_text">Lambda School Webpt5</h3>
-        <h3 class="footer_text">Project time frame => 04/22/2019  -  05/02/2019</h3>
-        <script src="components/menu.js"></script>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeop613wuZcWB3hQ1XWypqqc97m__vIaw&libraries=places"></script>
-        <script src="components/map_google.js"></script>
-    </footer>
 </html>
+
+

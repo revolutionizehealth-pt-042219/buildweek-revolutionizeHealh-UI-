@@ -4,25 +4,33 @@
 }
 
 html {
-    // background-color: #445E93;
     font-size: 100%;
     color: #777;
     font-family: "Lato" , sans-serif;
     font-weight: 400;
-    line-height: 1.7;
+    overflow: scroll;
+    height: 100%;
+}
+
+.push {
+    height: 170px;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
 
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    margin: 0;
+    height: 100%;
 }
 
 h1 , h2 , h3 , h4 {
     font-display: 'Aileron-Thin';
     color: #3A405A;
     width: 0 auto;
-
 }
 
 h1 {
