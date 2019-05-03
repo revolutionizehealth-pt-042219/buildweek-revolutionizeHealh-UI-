@@ -446,6 +446,14 @@ h6 {
   .index_wraper .top_container .center_box .sub_text2 {
     margin-top: 1%;
   }
+  .index_wraper .top_container .center_box .action_button {
+    font-size: 1.7rem;
+    width: 65%;
+    outline: none;
+  }
+  .index_wraper .top_container .center_box .action_button:active {
+    transform: translateY(5px);
+  }
 }
 @media (max-width: 500px) {
   .index_wraper .top_container .center_box .main_header {
