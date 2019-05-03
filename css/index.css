@@ -161,12 +161,13 @@ h4 {
   width: 0 auto;
 }
 h1 {
-  margin: 1% 20%;
+  margin: 1% 5%;
+  color: #9a9ea1;
   align-items: center;
   align-content: center;
-  font-size: 3rem;
+  font-size: 9rem;
   text-align: center;
-  border-bottom: 1px #3A405A solid;
+  font-weight: 800;
 }
 h2 {
   font-size: 1.2rem;
@@ -230,6 +231,10 @@ h6 {
   width: 100%;
   height: 80px;
   background-color: #3A405A;
+}
+.navigation_others .logo {
+  margin-top: 3px;
+  margin-left: 10px;
 }
 .navigation_others .menu-button {
   position: fixed;
@@ -329,14 +334,40 @@ h6 {
   height: auto;
 }
 .index_wraper .top_container {
+  display: flex;
   justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 94vh;
-  background-image: linear-gradient(to right bottom, rgba(29, 18, 18, 0.521), rgba(7, 8, 8, 0.74)), url(../assets/clean_hospital.png);
+  background-image: linear-gradient(to right bottom, rgba(29, 27, 27, 0.774), rgba(13, 14, 14, 0.89)), url(../assets/bigscreen.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 50% 98%, 0 85vh);
   overflow: hidden;
+}
+.index_wraper .top_container .center_box {
+  align-content: center;
+  justify-content: center;
+  margin-top: 1%;
+  width: 95%;
+  height: 70%;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-name: moveInBottom;
+  padding: 0;
+}
+.index_wraper .top_container .center_box .sub_text1,
+.index_wraper .top_container .center_box .sub_text2 {
+  margin: 4% 1% 1% 1%;
+  color: #9a9ea1;
+  font-size: 4.5rem;
+  text-align: center;
+  font-weight: 800;
+}
+.index_wraper .top_container .center_box .sub_text2 {
+  margin-top: 1%;
 }
 @keyframes moveInLeft {
   0% {
@@ -375,6 +406,32 @@ h6 {
   100% {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+@media (max-width: 800px) {
+  .index_wraper .top_container .center_box .main_header {
+    font-size: 6rem;
+  }
+  .index_wraper .top_container .center_box .sub_text1,
+  .index_wraper .top_container .center_box .sub_text2 {
+    margin: 4% 1% 1% 1%;
+    font-size: 3rem;
+  }
+  .index_wraper .top_container .center_box .sub_text2 {
+    margin-top: 1%;
+  }
+}
+@media (max-width: 500px) {
+  .index_wraper .top_container .center_box .main_header {
+    font-size: 4rem;
+  }
+  .index_wraper .top_container .center_box .sub_text1,
+  .index_wraper .top_container .center_box .sub_text2 {
+    margin: 4% 1% 1% 1%;
+    font-size: 2rem;
+  }
+  .index_wraper .top_container .center_box .sub_text2 {
+    margin-top: 1%;
   }
 }
 .middle_container {
@@ -720,7 +777,7 @@ h6 {
   align-items: center;
   justify-content: space-evenly;
   margin-top: 1%;
-  margin-bottom: 1%;
+  margin-bottom: 4%;
   width: 80%;
   height: auto;
   background-color: #e8edf1;
@@ -761,6 +818,10 @@ h6 {
   border-radius: 5px;
   padding: 1rem 0.9rem 1rem 0.9rem;
   transition: 0.35s;
+}
+.about .about_class .wrapper .left_box .form_resize,
+.about .about_class .wrapper .right_box .form_resize {
+  width: 92%;
 }
 .about .about_class .wrapper .left_box .tech_logos_s,
 .about .about_class .wrapper .right_box .tech_logos_s {
