@@ -20,9 +20,11 @@
         overflow: hidden;
 
         .center_box {
+            display: flex;
+            flex-direction: column;
             align-content: center;
             justify-content: center;
-            margin-top: 1%;
+            margin-top: 0;
             width: 95%;
             height: 70%;
             animation-duration: 1s;
@@ -39,7 +41,34 @@
             }
             .sub_text2 {
                 margin-top: 1%;
+                margin-bottom: 2%;
             }
+
+            .action_button {
+                justify-content: center;
+                text-align: center;
+                margin: 0 auto; 
+                font-size: 1.8rem;
+                font-family: 'Aileron-thin';
+                color: rgb(240, 231, 231); 
+                padding: 10px 12px; 
+                border: 1px solid rgb(248, 243, 243); 
+                border-radius: 25px;
+                width: 25%;
+                height: 3.6rem; 
+                background-color:rgba(58, 64, 90, 0.021);
+                cursor: pointer;
+                outline:none;
+               
+                &:hover{
+                    transform: translateY(-4px);
+                    transition: 0.9s;
+                }
+            }
+            .action_button:active {
+                transform: translateY(5px);
+            }
+            
 
         } 
 
