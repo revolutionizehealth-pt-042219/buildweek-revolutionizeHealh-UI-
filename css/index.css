@@ -832,6 +832,23 @@ h6 {
   transform: translateY(-4px);
   transition: 0.4s;
 }
+.about .about_class .tech_box_details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1%;
+  margin-bottom: 4%;
+  border: 1px #d1c0c0 solid;
+  width: 80%;
+  height: auto;
+  background-color: #e8edf1;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  padding: 1rem 0.9rem 1rem 0.9rem;
+  transition: 0.35s;
+  margin: 0 auto;
+}
 .about .about_class .wrapper {
   display: flex;
   flex-direction: row;
